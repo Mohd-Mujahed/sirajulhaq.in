@@ -677,38 +677,47 @@
 
 <!---------------------------------------------------------------------------------------------------------------------->
 
-
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your full name">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control"
-							placeholder="Your Message"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-			</form>
-		</div>
+<div id="fh5co-consult">
+	<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
+	  <div class="overlay"></div>
 	</div>
+	<div class="choose animate-box">
+	  <h2>Contact</h2>
+  
+	  <!-- ✅ Updated form -->
+	  <form action="https://formsubmit.co/sirajulhaq.in@gmail.com" method="POST">
+		
+		<!-- Optional security & config -->
+		<input type="hidden" name="_captcha" value="false"> <!-- disable captcha -->
+		<input type="hidden" name="_template" value="table"> <!-- nice table email format -->
+		<!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> redirect after submit -->
+  
+		<div class="row form-group">
+		  <div class="col-md-6">
+			<input type="text" name="name" id="fname" class="form-control" placeholder="Your full name" required>
+		  </div>
+		</div>
+  
+		<div class="row form-group">
+		  <div class="col-md-12">
+			<input type="email" name="email" id="email" class="form-control" placeholder="Your email address" required>
+		  </div>
+		</div>
+  
+		<div class="row form-group">
+		  <div class="col-md-12">
+			<textarea name="message" id="message" cols="30" rows="10" class="form-control"
+			  placeholder="Your Message" required></textarea>
+		  </div>
+		</div>
+  
+		<div class="form-group">
+		  <input type="submit" value="Send Message" class="btn btn-primary">
+		</div>
+	  </form>
+	</div>
+  </div>
+  
 
 
 <!---------------------------------------------------------------------------------------------------------------------->
@@ -739,7 +748,7 @@
 	<script 
 		src="js/main.js">
 	</script>
-	<script>
+	<!-- <script>
 		document.querySelector('form').addEventListener('submit', function (e) {
 			e.preventDefault(); // Prevent the actual form submission
 
@@ -758,6 +767,6 @@
 			window.location.href = `https://wa.me/919848932814?text=${whatsappMessage}`;
 		});
 
-	</script>
+	</script> -->
 </body>
 </html>
